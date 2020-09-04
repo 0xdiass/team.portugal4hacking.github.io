@@ -109,9 +109,9 @@ table {
   border-top: 1px solid #666;
   border-bottom: 1px solid #666;
 }
-table thead th { border-bottom: 1px solid #ddd; }
+table thead th { border-bottom: 1px solid rgb(5, 5, 5); }
 th, td { padding: 5px; }
-tr:nth-child(even) { background: #eee }
+tr:nth-child(even) { background: rgb(192, 38, 38) }
 
 h1,h2,h3 {
   line-height: 1.0;
@@ -135,4 +135,90 @@ h1,h2,h3 {
 ul {
   list-style: square;
   color: #0f0fbd;
+}
+
+center {
+  line-height: 3.0;
+  text-align: center;
+}
+
+.tables {
+	margin-bottom: 30px
+}
+
+.tables h2 {
+	letter-spacing: -1.25px;
+  font-size: 32px
+}
+
+@media screen and (max-width: 800px) {
+	.tables h2 {
+		font-size: 28px
+	}
+}
+
+.tables h3 {
+	letter-spacing: -1px;
+	font-size: 26px
+}
+
+@media screen and (max-width: 800px) {
+	.tables h3 {
+		font-size: 22px
+	}
+}
+
+.tables h4 {
+	font-size: 20px
+}
+
+@media screen and (max-width: 800px) {
+	.tables h4 {
+		font-size: 18px
+  }
+}
+
+table {
+	padding: 0
+}
+
+table tr {
+	border-top: 1px solid #000000;
+	background-color: rgba(44, 44, 44, 0.623);
+	margin: 0;
+	padding: 0
+}
+
+table tr:nth-child(2n) {
+	background-color: #000000
+}
+
+table tr th {
+	font-weight: bold;
+	border: 1px solid #000000;
+	text-align: left;
+	margin: 0;
+	padding: 6px 13px
+}
+
+table tr td {
+	border: 1px solid #000000;
+	text-align: left;
+	margin: 0;
+	padding: 6px 13px
+}
+
+table tr th :first-child,
+table tr td :first-child {
+	margin-top: 0
+}
+
+table tr th :last-child,
+table tr td :last-child {
+	margin-bottom: 0
+}
+
+.textcolor {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.671);
 }
